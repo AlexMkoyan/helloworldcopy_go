@@ -24,6 +24,10 @@ jobs:
       - name: Run go file
         run: go run main.go
 
+      # - name: Build
+      #   run: go build -v ./...
+
       - name: Test
         run: go test -v ./...
+      
       
