@@ -14,5 +14,11 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build the Docker image
         run: docker build -t alexmkoyan/go-app .
-
+      - name: Push to Docker Hub
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: example/go
+          tags: latest, ${{ github.run_number }}
 
