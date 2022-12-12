@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Pull docker image
-        run: docker pull hello-world
+        run: docker pull artur9022/goapp
       - name: Run docker image
-        run: docker run hello-world
+        run: docker run artur9022/goapp
 
