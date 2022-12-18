@@ -1,4 +1,4 @@
-name: go matrix 
+name: go build go app with using matrix
 
 on:
   push:
