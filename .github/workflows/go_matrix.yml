@@ -1,4 +1,4 @@
-name: go build go app with using matrix
+name: run go app with using matrix
 
 on:
   push:
@@ -26,5 +26,3 @@ jobs:
       - name: Run go file
         run: go run main.go
 
-      
-      
