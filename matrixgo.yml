@@ -1,4 +1,4 @@
-name: go hello world 
+name: go matrix 
 
 on:
   push:
